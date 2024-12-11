@@ -15,6 +15,7 @@ import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
+import resume from '../components/assets/resume.pdf';
 import {
   About,
   ContactSection,
@@ -73,14 +74,14 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: 'components/resume.pdf',
+      href: 'src/components/assets/resume.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
     },
     {
-      href: `#${SectionId.Contact}`,
-      text: 'Contact',
+      href: `mailto:mike+website@desocios.com`,
+      text: 'Email me!',
       primary: false,
     },
   ],
