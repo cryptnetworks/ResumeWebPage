@@ -15,7 +15,6 @@ import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
-import resume from '../components/assets/resume.pdf';
 import {
   About,
   ContactSection,
@@ -74,7 +73,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: 'src/components/assets/resume.pdf',
+      href: '/assets/resume.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
