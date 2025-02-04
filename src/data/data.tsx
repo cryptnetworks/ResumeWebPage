@@ -12,7 +12,8 @@ import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
+import porfolioImage1 from '../images/portfolio/github.jpg';
+import porfolioImage2 from '../images/portfolio/wikijs.jpg'
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -49,6 +50,7 @@ export const SectionId = {
   Skills: 'skills',
   Stats: 'stats',
   Testimonials: 'testimonials',
+  Wiki: 'wiki',
 } as const;
 
 export type SectionId = (typeof SectionId)[keyof typeof SectionId];
@@ -94,15 +96,25 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `I'm Mike DeSocio! Most of my life I have been surrounded by 
+  computers and technology. From the ripe young age of 3, I can remember by dad
+  coming home and working on client PCs and showing me the ins and outs. I was hooked!
+  15 years later after an awakening from Music School, I enrolled in the Bachelors of Science
+  Program for Cybersecurity at the University at Albany. I was heavily involved with on campus organizations
+  such as Cyber Defense Organization (CDO) and IEEE. CDO gave me the ability to explore new technologies and 
+  gain more friends and mentors along the way. Most of my software and technology expertise grew here.
+  My current cybersecurity toolset skills include security logging and hunting using Splunk and QRadar; gathering
+  CTI information for hunts using threat feeds imported into OpenCTI; and a vast knowledge base of different NIST
+  Standards (800-30, 800-53r5, 800-63, 800-171) and other compliance domains such as CJIS, IRS Pub1075, and more.`,
+  description_2:`On the weekends, I like to travel to the Adirondacks and enjoy what it has to offer. My family
+  owns property up there and it's a great escape from the busy life! You'll often find me playing guitar, hiking,
+  or exploring the surrounding region!`,
   aboutItems: [
     {label: 'Location', text: 'New York', Icon: MapIcon},
     {label: 'Nationality', text: 'Italian/American', Icon: FlagIcon},
     {
-      label: 'Interests',
-      text: 'Acoustic Guitar, Orchestral Music, Hiking, Baseball, Learning, Traveling',
+      label: 'Hobbies',
+      text: 'Acoustic Guitar, Orchestral Music, Hiking, Baseball, Homelabbing, Learning, Traveling',
       Icon: SparklesIcon,
     },
     {label: 'Study', text: 'University at Albany, SUNY', Icon: AcademicCapIcon},
@@ -124,53 +136,57 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
-    name: 'Frontend development',
+    name: 'Cybersecurity Domains',
     skills: [
       {
-        name: 'React',
+        name: 'Risk Management',
         level: 9,
       },
       {
-        name: 'Typescript',
-        level: 7,
-      },
-      {
-        name: 'GraphQL',
-        level: 6,
-      },
-    ],
-  },
-  {
-    name: 'Backend development',
-    skills: [
-      {
-        name: 'Node.js',
+        name: 'Operations Center Analyst',
         level: 8,
       },
       {
-        name: 'Rust',
+        name: 'Threat Intelligence',
+        level: 7,
+      },
+      {
+        name: 'Policy Writing',
+        level: 7,
+      },
+    ],
+  },
+  {
+    name: 'Enterprise IT Services',
+    skills: [
+      {
+        name: 'Containerization Services',
+        level: 8,
+      },
+      {
+        name: 'Splunk',
         level: 5,
       },
       {
-        name: 'Golang',
+        name: 'Microsoft Active Directory Services',
         level: 4,
       },
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Operating Systems',
     skills: [
       {
-        name: 'React Native',
+        name: 'MacOS',
         level: 9,
       },
       {
-        name: 'Flutter',
-        level: 4,
+        name: 'Linux',
+        level: 8,
       },
       {
-        name: 'Swift',
-        level: 3,
+        name: 'Windows',
+        level: 5,
       },
     ],
   },
@@ -184,6 +200,12 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'Wiki',
     description: 'I document all of my projects on my wiki here! It allows for me to update them more easily.',
     url: 'https://wiki.idiots.cc',
+    image: porfolioImage2,
+  },
+  {
+    title: 'GitHub',
+    description: 'All of my codebases for my projects can be found here. I try to keep them updated as much as',
+    url: 'https://github.com/mdesocio',
     image: porfolioImage1,
   },
 ];
@@ -260,6 +282,11 @@ export const contact: ContactSection = {
       text: 'mdesocio',
       href: 'https://github.com/mdesocio',
     },
+    {
+      type: ContactType.LinkedIn,
+      text: 'Michael DeSocio',
+      href: 'https://www.linkedin.com/in/michael-desocio-95b461187'
+    }
   ],
 };
 
