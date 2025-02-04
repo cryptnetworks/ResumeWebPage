@@ -12,7 +12,7 @@ export const headerID = 'headerNav';
 const Header: FC = memo(() => {
   const [currentSection, setCurrentSection] = useState<SectionId | null>(null);
   const navSections = useMemo(
-    () => [SectionId.About, SectionId.Resume, SectionId.Portfolio, SectionId.Testimonials, SectionId.Contact],
+    () => [SectionId.About, SectionId.Resume, SectionId.Portfolio, SectionId.Testimonials, SectionId.Wiki],
     [],
   );
 
@@ -124,16 +124,23 @@ const NavItem: FC<{
   inactiveClass: string;
   onClick?: () => void;
 }> = memo(({section, current, inactiveClass, activeClass, onClick}) => {
+  const isRedirectSection = section === SectionId.Wiki; // Replace 'X' with the actual section key
+  const href = isRedirectSection ? 'https://wiki.idiots.cc' : `/#${section}`;
+
   return (
     <Link
       className={classNames(current ? activeClass : inactiveClass)}
-      href={`/#${section}`}
+      href={href}
       key={section}
-      onClick={onClick}>
+      onClick={onClick}
+      rel={isRedirectSection ? 'noopener noreferrer' : undefined} // Security best practice for external links
+      target={isRedirectSection ? '_blank' : undefined} // Open in a new tab for external links
+    >
       {section}
     </Link>
   );
 });
+
 
 Header.displayName = 'Header';
 export default Header;
