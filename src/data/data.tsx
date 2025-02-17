@@ -237,8 +237,11 @@ export const experience: TimelineItem[] = [
     title: 'Information Technology Specialist III',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Developed and implemented a workflow to track and report statistics for 3,000+ end-of-life servers, achieving 50% improvement in data accuracy and reducing
+        review time by 25%. Conducted network and service reconnaissance to remediate 33% of the systems targeted in FY2024, reducing the critical asset attack surface 
+        of New York State. Carried out large review of nearly 2000 identified risks across New York State systems, to identify the top 1% of the risks documented in Archer 
+        IRM to be addressed in the next phase of the enterprise security risk remediation program. Conducted Security Design and Operation Reviews on emerging technologies, 
+        including AI and cloud solutions, providing strategic cybersecurity insights to agency executives.
       </p>
     ),
   },
