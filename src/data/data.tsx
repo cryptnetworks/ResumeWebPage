@@ -198,13 +198,13 @@ export const skills: SkillGroup[] = [
 export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Wiki',
-    description: 'I document all of my projects on my wiki here! It allows for me to update them more easily.',
+    description: 'I document all of my projects on my wiki here!',
     url: 'https://wiki.idiots.cc',
     image: porfolioImage2,
   },
   {
     title: 'GitHub',
-    description: 'All of my codebases for my projects can be found here. I try to keep them updated as much as',
+    description: 'All of my codebases for my projects can be found here.',
     url: 'https://github.com/mdesocio',
     image: porfolioImage1,
   },
