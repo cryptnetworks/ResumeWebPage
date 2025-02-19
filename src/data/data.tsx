@@ -127,11 +127,31 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
+    name: 'Soft Skills',
     skills: [
       {
-        name: 'English',
+        name: 'Leader',
         level: 10,
+      },
+      {
+        name: 'Communication',
+        level: 10,
+      },
+      {
+        name: 'Problem Solver',
+        level: 9,
+      },
+      {
+        name: 'Visionary',
+        level: 9,
+      },
+      {
+        name: 'Collaboration',
+        level: 9,
+      },
+      {
+        name: 'Coordination',
+        level: 8,
       },
     ],
   },
@@ -143,7 +163,11 @@ export const skills: SkillGroup[] = [
         level: 9,
       },
       {
-        name: 'Operations Center Analyst',
+        name: 'Operations Center Analysis',
+        level: 8,
+      },
+      {
+        name: 'Incident Response',
         level: 8,
       },
       {
@@ -164,8 +188,8 @@ export const skills: SkillGroup[] = [
         level: 8,
       },
       {
-        name: 'Splunk',
-        level: 5,
+        name: 'SIEM',
+        level: 6,
       },
       {
         name: 'Microsoft Active Directory Services',
