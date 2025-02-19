@@ -213,23 +213,6 @@ export const portfolioItems: PortfolioItem[] = [
 /**
  * Resume section -- TODO: Standardize resume contact format or offer MDX
  */
-export const education: TimelineItem[] = [
-  {
-    date: 'January 2021 - December 2023',
-    location: 'University at Albany, SUNY',
-    title: 'Bachelors of Science in Cybersecurity',
-    content: (
-      <p>
-        My studies were heavily focused in cybersecurity operations and technologies. As apart of my capstone, I was
-        responsible for designing and coordinating the beginning steps of a VDI instructure solution to allow less
-        privileged students to be able to utilize industry tooling with nothing more than a Chromebook and internet
-        connection. In addition, I was heavily involved in the interworkings of the program at UAlbany. The program was
-        undergoing a revision when I was attending.
-      </p>
-    ),
-  },
-];
-
 export const experience: TimelineItem[] = [
   {
     date: 'March 2023 - Present',
@@ -242,6 +225,23 @@ export const experience: TimelineItem[] = [
         of New York State. Carried out large review of nearly 2000 identified risks across New York State systems, to identify the top 1% of the risks documented in Archer 
         IRM to be addressed in the next phase of the enterprise security risk remediation program. Conducted Security Design and Operation Reviews on emerging technologies, 
         including AI and cloud solutions, providing strategic cybersecurity insights to agency executives.
+      </p>
+    ),
+  },
+];
+
+export const education: TimelineItem[] = [
+  {
+    date: '',
+    location: 'University at Albany, SUNY',
+    title: 'Bachelors of Science in Cybersecurity',
+    content: (
+      <p>
+        My studies were heavily focused in cybersecurity operations and technologies. As apart of my capstone, I was
+        responsible for designing and coordinating the beginning steps of a VDI instructure solution to allow less
+        privileged students to be able to utilize industry tooling with nothing more than a Chromebook and internet
+        connection. In addition, I was heavily involved in the interworkings of the program at UAlbany. The program was
+        undergoing a revision when I was attending.
       </p>
     ),
   },
