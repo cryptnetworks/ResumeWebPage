@@ -281,7 +281,7 @@ export const testimonial: TestimonialSection = {
       name: 'Collin C.',
       text: 'Mike has proven time and time again, that he is a consummate cybersecurity professional...He is highly motivated and actively seeks out new challenges and opportunities for growth, and his dedication to learning is steadfast and unwavering. Mike has proven to be a highly capable and motivated individual. Any team that Mike is a part of will surely be lucky to have him.',
       image:
-        'https://media.licdn.com/dms/image/v2/D4E03AQH8mUyKZgjbfA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1684265566376?e=1738800000&v=beta&t=F2HA8HJoL7TWaYvozvtSKxRlNMN0wdmwdFYlnbKPs8Y',
+        'https://media.licdn.com/dms/image/v2/D4E03AQH8mUyKZgjbfA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1684265566376?e=2147483647&v=beta&t=8wdOJWlBe_-7dkXY0cI1LMW7X-usGKIaqpLeSJ1XwPw',
     },
   ],
 };
