@@ -321,7 +321,7 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/mdesocio'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/cryptnetworks'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/michael-desocio-95b461187'},
   {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/crypticnetworks/'},
   {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/mdesocio28'},
