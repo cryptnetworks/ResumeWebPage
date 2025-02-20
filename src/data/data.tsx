@@ -229,7 +229,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'GitHub',
     description: 'All of my codebases for my projects can be found here.',
-    url: 'https://github.com/mdesocio',
+    url: 'https://github.com/cryptnetworks',
     image: porfolioImage1,
   },
 ];
@@ -241,7 +241,7 @@ export const experience: TimelineItem[] = [
   {
     date: 'March 2023 - Present',
     location: 'New York State Office of Information Technology Services',
-    title: 'Information Technology Specialist III',
+    title: 'Lead Risk Management Analyst (ITS III)',
     content: (
       <p>
         Developed and implemented a workflow to track and report statistics for 3,000+ end-of-life servers, achieving 50% improvement in data accuracy and reducing
