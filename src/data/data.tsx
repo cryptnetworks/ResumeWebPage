@@ -307,7 +307,7 @@ export const contact: ContactSection = {
     {
       type: ContactType.Github,
       text: 'mdesocio',
-      href: 'https://github.com/mdesocio',
+      href: 'https://github.com/cryptnetworks',
     },
     {
       type: ContactType.LinkedIn,
