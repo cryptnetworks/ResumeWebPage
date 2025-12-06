@@ -125,7 +125,7 @@ const NavItem: FC<{
   onClick?: () => void;
 }> = memo(({section, current, inactiveClass, activeClass, onClick}) => {
   const isRedirectSection = section === SectionId.Wiki; // Replace 'X' with the actual section key
-  const href = isRedirectSection ? 'https://wiki.idiots.cc' : `/#${section}`;
+  const href = isRedirectSection ? 'https://wiki.mdesocio.com' : `/#${section}`;
 
   return (
     <Link

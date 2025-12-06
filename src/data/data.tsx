@@ -66,8 +66,7 @@ export const heroData: Hero = {
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I'm a New York based <strong className="text-stone-100">Information Security Professional</strong>, currently
         working for{' '}
-        <strong className="text-stone-100">The New York State Office of Information Technology Services</strong> working
-        to protect the data of our agencies and citizens.
+        <strong className="text-stone-100">Luminary Energy LLC.</strong> to secure and protect our client's data.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         In my free time time, you can catch me playing <strong className="text-stone-100">guitar</strong>; traveling to
@@ -84,7 +83,7 @@ export const heroData: Hero = {
       Icon: ArrowDownTrayIcon,
     },
     {
-      href: `mailto:mike+website@desocios.com`,
+      href: `mailto:mdes28@outlook.com`,
       text: 'Email me!',
       primary: false,
     },
@@ -105,7 +104,7 @@ export const aboutData: About = {
   gain more friends and mentors along the way. Most of my software and technology expertise grew here.
   My current cybersecurity toolset skills include security logging and hunting using Splunk and QRadar; gathering
   CTI information for hunts using threat feeds imported into OpenCTI; and a vast knowledge base of different NIST
-  Standards (800-30, 800-53r5, 800-63, 800-171) and other compliance domains such as CJIS, IRS Pub1075, and more.`,
+  Standards (800-30, 800-53r5, 800-63, 800-171) and other compliance domains such as NERC CIP, CJIS, IRS Pub1075, and more.`,
   description_2:`On the weekends, I like to travel to the Adirondacks and enjoy what it has to offer. My family
   owns property up there and it's a great escape from the busy life! You'll often find me playing guitar, hiking,
   or exploring the surrounding region!`,
@@ -114,11 +113,11 @@ export const aboutData: About = {
     {label: 'Nationality', text: 'Italian/American', Icon: FlagIcon},
     {
       label: 'Hobbies',
-      text: 'Acoustic Guitar, Orchestral Music, Hiking, Baseball, Homelabbing, Learning, Traveling',
+      text: 'Acoustic Guitar, Orchestral Music, Hiking, Baseball, Learning, Traveling',
       Icon: SparklesIcon,
     },
     {label: 'Study', text: 'University at Albany, SUNY', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'New York State Office of Information Technology Services', Icon: BuildingOffice2Icon},
+    {label: 'Employment', text: 'Luminary Energy, LLC.', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -223,7 +222,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Wiki',
     description: 'I document all of my projects on my wiki here!',
-    url: 'https://wiki.idiots.cc',
+    url: 'https://wiki.mdesocio.com',
     image: porfolioImage2,
   },
   {
@@ -239,7 +238,16 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2023 - Present',
+    date: 'April 2025 - Present',
+    location: 'Luminary Energy, LLC.',
+    title: 'Director of Cyber Security and Compliance',
+    content: (
+      <p>
+      </p>
+    ),
+  },
+  {
+    date: 'March 2023 - April 2025',
     location: 'New York State Office of Information Technology Services',
     title: 'Lead Risk Management Analyst (ITS III)',
     content: (
@@ -297,7 +305,7 @@ export const contact: ContactSection = {
     {
       type: ContactType.Email,
       text: 'Email Me!',
-      href: 'mailto:mike+website@desocios.com',
+      href: 'mailto:mdes28@outlook.com',
     },
     {
       type: ContactType.Instagram,
@@ -306,7 +314,7 @@ export const contact: ContactSection = {
     },
     {
       type: ContactType.Github,
-      text: 'mdesocio',
+      text: 'cryptnetworks',
       href: 'https://github.com/cryptnetworks',
     },
     {
