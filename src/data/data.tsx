@@ -13,7 +13,7 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/github.jpg';
-import porfolioImage2 from '../images/portfolio/wikijs.jpg'
+import porfolioImage2 from '../images/portfolio/wikijs.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -65,8 +65,8 @@ export const heroData: Hero = {
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I'm a New York based <strong className="text-stone-100">Information Security Professional</strong>, currently
-        working for{' '}
-        <strong className="text-stone-100">Luminary Energy LLC.</strong> to secure and protect our client's data.
+        working for <strong className="text-stone-100">Luminary Energy LLC.</strong> to secure and protect our client's
+        data.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         In my free time time, you can catch me playing <strong className="text-stone-100">guitar</strong>; traveling to
@@ -77,7 +77,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: 'assets/resume.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -105,7 +105,7 @@ export const aboutData: About = {
   My current cybersecurity toolset skills include security logging and hunting using Splunk and QRadar; gathering
   CTI information for hunts using threat feeds imported into OpenCTI; and a vast knowledge base of different NIST
   Standards (800-30, 800-53r5, 800-63, 800-171) and other compliance domains such as NERC CIP, CJIS, IRS Pub1075, and more.`,
-  description_2:`On the weekends, I like to travel to the Adirondacks and enjoy what it has to offer. My family
+  description_2: `On the weekends, I like to travel to the Adirondacks and enjoy what it has to offer. My family
   owns property up there and it's a great escape from the busy life! You'll often find me playing guitar, hiking,
   or exploring the surrounding region!`,
   aboutItems: [
@@ -241,10 +241,7 @@ export const experience: TimelineItem[] = [
     date: 'April 2025 - Present',
     location: 'Luminary Energy, LLC.',
     title: 'Director of Cyber Security and Compliance',
-    content: (
-      <p>
-      </p>
-    ),
+    content: <p></p>,
   },
   {
     date: 'March 2023 - April 2025',
@@ -252,11 +249,13 @@ export const experience: TimelineItem[] = [
     title: 'Lead Risk Management Analyst (ITS III)',
     content: (
       <p>
-        Developed and implemented a workflow to track and report statistics for 3,000+ end-of-life servers, achieving 50% improvement in data accuracy and reducing
-        review time by 25%. Conducted network and service reconnaissance to remediate 33% of the systems targeted in FY2024, reducing the critical asset attack surface 
-        of New York State. Carried out large review of nearly 2000 identified risks across New York State systems, to identify the top 1% of the risks documented in Archer 
-        IRM to be addressed in the next phase of the enterprise security risk remediation program. Conducted Security Design and Operation Reviews on emerging technologies, 
-        including AI and cloud solutions, providing strategic cybersecurity insights to agency executives.
+        Developed and implemented a workflow to track and report statistics for 3,000+ end-of-life servers, achieving
+        50% improvement in data accuracy and reducing review time by 25%. Conducted network and service reconnaissance
+        to remediate 33% of the systems targeted in FY2024, reducing the critical asset attack surface of New York
+        State. Carried out large review of nearly 2000 identified risks across New York State systems, to identify the
+        top 1% of the risks documented in Archer IRM to be addressed in the next phase of the enterprise security risk
+        remediation program. Conducted Security Design and Operation Reviews on emerging technologies, including AI and
+        cloud solutions, providing strategic cybersecurity insights to agency executives.
       </p>
     ),
   },
@@ -320,8 +319,8 @@ export const contact: ContactSection = {
     {
       type: ContactType.LinkedIn,
       text: 'Michael DeSocio',
-      href: 'https://www.linkedin.com/in/michael-desocio-95b461187'
-    }
+      href: 'https://www.linkedin.com/in/michael-desocio-95b461187',
+    },
   ],
 };
 

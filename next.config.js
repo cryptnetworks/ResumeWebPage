@@ -1,34 +1,29 @@
 /* eslint-env node */
 
-// https://github.com/vercel/next.js/blob/master/packages/next/next-server/server/config.ts
+const isGithubActions = process.env.GITHUB_ACTIONS === 'true';
+const repoName = process.env.GITHUB_REPOSITORY?.split('/')[1];
+const isProjectPages = isGithubActions && repoName && !repoName.endsWith('.github.io');
+const basePath = isProjectPages ? `/${repoName}` : '';
+
 const nextConfig = {
-  webpack: config => {
-    const oneOfRule = config.module.rules.find(rule => rule.oneOf);
-
-    // Next 12 has multiple TS loaders, and we need to update all of them.
-    const tsRules = oneOfRule.oneOf.filter(rule => rule.test && rule.test.toString().includes('tsx|ts'));
-
-    tsRules.forEach(rule => {
-      // eslint-disable-next-line no-param-reassign
-      rule.include = undefined;
-    });
-
-    return config;
-  },
+  assetPrefix: basePath,
   compress: true,
   generateEtags: true,
+  output: 'export',
   pageExtensions: ['tsx', 'mdx', 'ts'],
   poweredByHeader: false,
   productionBrowserSourceMaps: false,
   reactStrictMode: true,
-  swcMinify: true,
   trailingSlash: false,
+  basePath,
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
         hostname: 'images.unsplash.com',
-      },{
+      },
+      {
         protocol: 'https',
         hostname: 'source.unsplash.com',
       },

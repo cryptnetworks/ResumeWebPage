@@ -9,7 +9,6 @@ import {PortfolioItem} from '../../data/dataDef';
 import useDetectOutsideClick from '../../hooks/useDetectOutsideClick';
 import Section from '../Layout/Section';
 
-
 const Portfolio: FC = memo(() => {
   return (
     <Section className="bg-neutral-800" sectionId={SectionId.Portfolio}>
@@ -24,12 +23,7 @@ const Portfolio: FC = memo(() => {
             return (
               <div className="w-40 h-40" key={`${title}-${index}`}>
                 <div className="relative w-full h-full overflow-hidden rounded-lg shadow-lg shadow-black/30 lg:shadow-xl">
-                  <Image
-                    alt={title}
-                    className="w-full h-full object-cover"
-                    placeholder="blur"
-                    src={image}
-                  />
+                  <Image alt={title} className="w-full h-full object-cover" placeholder="blur" src={image} />
                   <ItemOverlay item={item} />
                 </div>
               </div>
@@ -40,9 +34,6 @@ const Portfolio: FC = memo(() => {
     </Section>
   );
 });
-
-
-
 
 // const Portfolio: FC = memo(() => {
 //   return (
